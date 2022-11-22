@@ -2,9 +2,9 @@
   "name": "piggy-game",
   "version": "1.0.0",
   "description": "pig game",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
-    "test": "compile:sass sass/main.scss style.css"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "author": "ejezie d.",
   "license": "ISC",

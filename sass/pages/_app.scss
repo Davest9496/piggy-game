@@ -1,0 +1,73 @@
+main {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  background-color: rgba($color-tetiary-light, 0.35);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+.name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 8rem;
+  color: $color-font-secondary;
+  margin-bottom: auto;
+  @include font-weight-md
+}
+
+.player--active {
+  background-color: rgba($color-primary-light, 0.2);
+}
+
+.player--active .name {
+  @include font-weight-lg;
+}
+
+.player--active .score {
+  @include font-weight-md;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: rgba($color-font-primary, 0.6);
+  border-radius: 3px;
+  color: $color-font-secondary;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+
+  &-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: $color-secondary-dark;
+  }
+
+  &-score {
+    font-size: 3.5rem;
+  }
+}

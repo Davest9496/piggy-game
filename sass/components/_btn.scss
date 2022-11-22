@@ -1,0 +1,72 @@
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  @include font-weight-md;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+
+&:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+&:focus {
+  outline: none;
+}
+
+ &--roll {
+  top: 65%;
+}
+
+&--hold {
+  top: 76.5%;
+}
+
+&--new {
+  top: 90%;
+}
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: $color-primary-dark;
+}
+
+.player--winner .name {
+  @include font-weight-lg;
+  color: $color-font-primary;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
+
+

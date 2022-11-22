@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(241, 211, 179, 0.5), rgba(199, 188, 161, 0.5));
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+body {
+  font-family: 'Asap', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
+  color: #65647c; }
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 400;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+  .btn:active {
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  .btn:focus {
+    outline: none; }
+  .btn--roll {
+    top: 65%; }
+  .btn--hold {
+    top: 76.5%; }
+  .btn--new {
+    top: 90%; }
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+
+.player--winner {
+  background-color: #5f8d4e; }
+
+.player--winner .name {
+  font-weight: 700;
+  color: #fff; }
+
+.hidden {
+  display: none; }
+
+main {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  background-color: rgba(248, 196, 180, 0.35);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  overflow: hidden; }
+
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s; }
+
+.name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 1rem; }
+
+.score {
+  font-size: 8rem;
+  color: #65647c;
+  margin-bottom: auto;
+  font-weight: 400; }
+
+.player--active {
+  background-color: rgba(164, 190, 123, 0.2); }
+
+.player--active .name {
+  font-weight: 700; }
+
+.player--active .score {
+  font-weight: 400; }
+
+.player--active .current {
+  opacity: 1; }
+
+.current {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  color: #65647c;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s; }
+  .current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #c7bca1; }
+  .current-score {
+    font-size: 3.5rem; }
+
+.fa-solid {
+  margin-left: 4px;
+  font-size: 2.4rem; }
