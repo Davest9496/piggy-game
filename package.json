@@ -1,0 +1,14 @@
+{
+  "name": "piggy-game",
+  "version": "1.0.0",
+  "description": "pig game",
+  "main": "script.js",
+  "scripts": {
+    "test": "compile:sass sass/main.scss style.css"
+  },
+  "author": "ejezie d.",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
