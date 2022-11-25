@@ -9,7 +9,7 @@ html {
 
 body {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(241, 211, 179, 0.5), rgba(199, 188, 161, 0.5));
+  background-image: linear-gradient(to right bottom, rgba(164, 190, 123, 0.9), rgba(95, 141, 78, 0.9));
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -49,30 +49,12 @@ body {
   .btn--new {
     top: 90%; }
 
-.dice {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translateX(-50%);
-  height: 10rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
-
-.player--winner {
-  background-color: #5f8d4e; }
-
-.player--winner .name {
-  font-weight: 700;
-  color: #fff; }
-
-.hidden {
-  display: none; }
-
 main {
   display: flex;
   position: relative;
   width: 80%;
   height: 90%;
-  background-color: rgba(248, 196, 180, 0.35);
+  background-color: rgba(248, 196, 180, 0.25);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow: hidden; }
@@ -101,7 +83,7 @@ main {
   font-weight: 400; }
 
 .player--active {
-  background-color: rgba(164, 190, 123, 0.2); }
+  background-color: rgba(255, 135, 135, 0.5); }
 
 .player--active .name {
   font-weight: 700; }
@@ -111,6 +93,24 @@ main {
 
 .player--active .current {
   opacity: 1; }
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+
+.player--winner {
+  background-color: #5f8d4e;
+  color: #fff; }
+
+.player--winner .name {
+  font-weight: 700; }
+
+.hidden {
+  display: none; }
 
 .current {
   background-color: rgba(255, 255, 255, 0.6);

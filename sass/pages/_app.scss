@@ -3,7 +3,7 @@ main {
   position: relative;
   width: 80%;
   height: 90%;
-  background-color: rgba($color-tetiary-light, 0.35);
+  background-color: rgba($color-tetiary-light, 0.25);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   overflow: hidden;
@@ -36,7 +36,7 @@ main {
 }
 
 .player--active {
-  background-color: rgba($color-primary-light, 0.2);
+  background-color: rgba($color-tetiary-dark, 0.5);
 }
 
 .player--active .name {
@@ -49,6 +49,29 @@ main {
 
 .player--active .current {
   opacity: 1;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: $color-primary-dark;
+  color: $color-font-primary;
+}
+
+.player--winner .name {
+  @include font-weight-lg;
+  
+}
+
+.hidden{
+  display: none;
 }
 
 .current {
